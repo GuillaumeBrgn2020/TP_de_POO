@@ -1,0 +1,29 @@
+1) Concordance des types : statique et dynamique
+
+2) Utilisation de instanceOf
+
+Question 3) 
+Object c = new Canard();
+Animal a = new Animal();
+("c est une instance de Canard : " + (c instanceof Canard)); TRUE
+("c est une instance de Animal : " + (c instanceof Animal)); TRUE
+("c est une instance de Object : " + (c instanceof Object)); TRUE
+("c est une instance de Integer : " + (c instanceof Integer)); FALSE
+("a est une instance de Canard : " + (a instanceof Canard)); FALSE
+("a est une instance de Animal : " + (a instanceof Animal)); TRUE
+("a est une instance de Object : " + (a instanceof Object)); TRUE
+("a est une instance de Integer : " + (a instanceof Integer)); FALSE
+
+Question 4) 
+	public static Boolean  instanceOf(A a , B b){
+		try(a = (B) b){
+			return(true)
+		}
+		catch(ExceptionType e){
+			return(false)
+		}
+	}
+
+
+	
+	
